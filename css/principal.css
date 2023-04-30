@@ -15,12 +15,15 @@
         border-radius: 50%;
     }
    
-    .imgDos{
+    .imgDos {
         border-radius: 50%;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 2rem;
+    }
+    .imgdosancho{
+      width: 300px;
     }
    
     .imgTres{
@@ -48,7 +51,6 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    background-color: rgb(145, 136, 136);
 
    }
    h1{
