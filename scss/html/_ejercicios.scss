@@ -1,0 +1,82 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend.scss";
+
+//estilos de ejercicios
+
+h1{
+    color: rgb(249, 250, 250);
+  }
+  
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  
+    .imagen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+      margin-bottom: 20px;
+  
+      img {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        text-align: center;
+      }
+    }
+  }
+  
+  .contenedor2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  
+    .imagen2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+      margin-bottom: 20px;
+  
+      img {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        text-align: center;
+      }
+    }
+  }
+  
+  .contenedor3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  
+    .imagen3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+      margin-bottom: 20px;
+  
+      img {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        text-align: center;
+      }
+    }
+  }
+  

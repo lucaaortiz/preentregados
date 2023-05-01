@@ -1,0 +1,38 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend.scss";
+
+/* Estilos de pagina principal*/
+
+main {
+    background-color: $color-principal;
+    
+    .imgUno {
+   @include flex;
+    }
+    
+    .imgDos {
+    @include flex;
+
+    &.imgdosancho {
+        width: 300px;
+      }
+    }
+    .imgTres {
+        @include flex;
+        }
+        
+        .imgCuatro {
+        @include flex;
+        }
+        
+        p {
+        color: $color-parrafo;
+        }
+        
+        footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        }
+        }

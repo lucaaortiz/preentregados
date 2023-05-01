@@ -1,0 +1,13 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend.scss";
+
+//estilo nosotros
+
+.imgNosotrosUno {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  

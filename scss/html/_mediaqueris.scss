@@ -1,0 +1,45 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend.scss";
+
+//media queris
+
+@media (max-width: 600px) {
+    .contenedor {
+      flex-direction: column;
+    }
+    
+    .imgUno,
+    .imgDos,
+    .imgTres,
+    .imgCuatro {
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    .contenedor2 {
+      flex-direction: column;
+    }
+    
+    .imgUno,
+    .imgDos,
+    .imgTres,
+    .imgCuatro {
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    
+    video {
+      width: 100%;
+      height: auto;
+    }
+    
+    h1, h2 {
+      text-align: center;
+    }
+  }
+ 
+  
+ 

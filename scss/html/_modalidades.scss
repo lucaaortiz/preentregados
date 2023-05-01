@@ -1,0 +1,25 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend.scss";
+
+//estilos modalidades
+
+.videouno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+    .videodos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .videotres {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+  
+  
