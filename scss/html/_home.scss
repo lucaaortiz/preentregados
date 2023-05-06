@@ -4,35 +4,39 @@
 
 /* Estilos de pagina principal*/
 
-main {
-    background-color: $color-principal;
-    
-    .imgUno {
-   @include flex;
-    }
-    
-    .imgDos {
-    @include flex;
+.navbar {
+  font-family: Arial;
 
-    &.imgdosancho {
-        width: 300px;
-      }
+  &-brand, &-nav .nav-link {
+    font-size: 18px;
+  }
+}
+
+p {
+  color: #b6b2b2;
+}
+
+main {
+  background-color: #080808;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      border-top-right-radius: 50%;
     }
-    .imgTres {
-        @include flex;
-        }
-        
-        .imgCuatro {
-        @include flex;
-        }
-        
-        p {
-        color: $color-parrafo;
-        }
-        
-        footer {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        }
-        }
+
+    p {
+      color: #fdfdfd;
+      text-align: center;
+    }
+  }
+}

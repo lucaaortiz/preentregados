@@ -1,0 +1,17 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend.scss";
+
+//estilos de contacto
+.mapa-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    .color-texto {
+      color: #b6b2b2;
+    }
+  }
+  
