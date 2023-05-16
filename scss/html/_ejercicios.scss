@@ -3,51 +3,36 @@
 @import "../utilidades/extend.scss";
 
 //estilos de ejercicios
-
-h1 {
-  color: rgb(250, 235, 215);
-  text-align: left;
-  margin: 30px 0;
-  font-size: 6rem;
-}
-
-.imgTotal {
-  width: 90%;
-  height: 75%;
-}
-
-.contenedor,
-.contenedor2,
-.contenedor3 {
+.contenedor, .contenedor2 {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 40px;
-  color: rgb(250, 235, 215);
-  
-  .imagen,
-  .imagen2,
-  .imagen3 {
-    flex-basis: 30%;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 0; 
+  flex-direction: column;
+  align-items: center;
+ 
+  .imagen {
+    @include flexdos;
+    
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    
+    p {
+      @include flex
+    
+    }
+  }
+
+  .imagen2 {
+    @include flexdos;
 
     img {
       max-width: 100%;
-      height: auto;
-      margin-bottom: 0; 
+      border-radius: 10px;
     }
-
+    
     p {
-      font-size: 1.6rem; 
+      @include flex
+    
     }
   }
 }
-
-
-
-
-

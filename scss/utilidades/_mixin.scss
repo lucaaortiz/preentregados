@@ -1,8 +1,14 @@
 @mixin flex{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+    text-align: center;
+}
+@mixin flexdos{
+    position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    border-radius: 50%; 
+    margin-bottom: 10px;
 }
  

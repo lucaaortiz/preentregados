@@ -44,51 +44,70 @@ section p {
 
 
 //media queris ejercicios
+@media (min-width: 768px) {
+  .contenedor, .contenedor2 {
+    .imagen {
+      flex-direction: row;
+      align-items: center;
 
-@media screen and (max-width: 768px) {
-  .contenedor,
-  .contenedor2,
-  .contenedor3 {
-    flex-direction: column;
+      img {
+        max-width: 300px;
+      }
+      
+      p {
+        margin-left: 20px;
+        text-align: left;
+      }
+    }
 
-    .imagen,
-    .imagen2,
-    .imagen3 {
-      flex-basis: 100%;
+    .imagen2 {
+      flex-direction: row-reverse;
+      align-items: center;
+
+      img {
+        max-width: 300px;
+      }
+      
+      p {
+        margin-right: 20px;
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedor, .contenedor2 {
+    .imagen {
+      margin-bottom: 20px;
+    }
+
+    .imagen2 {
       margin-bottom: 20px;
     }
   }
 }
-//media queris modalidades
-@media (max-width: 768px) {
-  .videouno,
-  .videodos,
-  .videotres {
-    h1 {
-      font-size: 2rem;
-    }
 
-    h2 {
-      font-size: 1.5rem;
-    }
+
+//media queris modalidades
+
+@media only screen and (min-width: 576px) {
+  .tamanoTitulo {
+    font-size: 4rem;
   }
 }
 
-@media (max-width: 480px) {
-  .videouno,
-  .videodos,
-  .videotres {
-    h1 {
-      font-size: 1.5rem;
-    }
+@media only screen and (min-width: 768px) {
+  .tamanoTitulo {
+    font-size: 3rem;
+  }
+}
 
-    h2 {
-      font-size: 1rem;
-    }
-
-    video {
-      max-width: 100%;
-    }
+@media only screen and (min-width: 992px) {
+  .videouno video,
+  .videodos video,
+  .videotres video {
+    max-width: 800px;
   }
 }
 
@@ -111,32 +130,22 @@ section p {
   }
 }
 //media queris contacto
-.mapa-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  @media only screen and (min-width: 768px) {
-    flex-direction: row;
-    
-    p {
-      margin: 0 1rem;
-    }
-  }
-}
-
-.navbar-brand {
-  display: flex;
-  align-items: center;
-
-  img {
-    margin-right: 5px;
+@media only screen and (min-width: 768px) {
+  .mapa-container {
+    font-size: 20px;
   }
 }
 
 
+@media only screen and (min-width: 992px) {
+  .mapa-container {
+    font-size: 24px;
+  }
+  
+  .color-texto {
+    font-weight: bold;
+  }
+}
 
 
 
