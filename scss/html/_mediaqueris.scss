@@ -77,16 +77,17 @@ section p {
 }
 
 @media (min-width: 1024px) {
-  .contenedor, .contenedor2 {
-    .imagen {
-      margin-bottom: 20px;
-    }
+  .contenedor .imagen,
+  .contenedor2 .imagen {
+    margin-bottom: 20px;
+  }
 
-    .imagen2 {
-      margin-bottom: 20px;
-    }
+  .contenedor .imagen2,
+  .contenedor2 .imagen2 {
+    margin-bottom: 20px;
   }
 }
+
 
 
 //media queris modalidades

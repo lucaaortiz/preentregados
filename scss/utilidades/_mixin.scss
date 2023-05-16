@@ -1,8 +1,6 @@
 @mixin flex{
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 10px 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 @mixin flexdos{
     position: relative;

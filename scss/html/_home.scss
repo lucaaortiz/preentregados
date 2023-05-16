@@ -18,10 +18,7 @@ p {
 
 main {
   background-color:$color-principal;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 2rem;
+
 
   section {
     display: flex;

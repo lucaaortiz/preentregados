@@ -3,36 +3,79 @@
 @import "../utilidades/extend.scss";
 
 //estilos de ejercicios
-.contenedor, .contenedor2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- 
-  .imagen {
-    @include flexdos;
-    
-    img {
-      max-width: 100%;
-      border-radius: 10px;
+.mi-clase-main {
+ @include felx;
+
+  .contenedor {
+    @include flex;
+
+
+    .imagen {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+        max-height: 400px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+      }
     }
-    
-    p {
-      @include flex
-    
+  }
+  
+  @media (min-width: 576px) {
+    .contenedor {
+      .imagen {
+        flex-direction: row;
+        align-items: center;
+
+        img {
+          max-height: 600px;
+        }
+
+        p {
+          margin-left: 10px;
+        }
+      }
     }
   }
 
-  .imagen2 {
-    @include flexdos;
-
-    img {
-      max-width: 100%;
-      border-radius: 10px;
+  @media (min-width: 768px) {
+    .contenedor {
+      .imagen {
+        img {
+          max-height: 800px;
+        }
+      }
     }
-    
-    p {
-      @include flex
-    
+  }
+
+  @media (min-width: 992px) {
+    .contenedor {
+      .imagen {
+        img {
+          max-height: 1000px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .contenedor {
+      .imagen {
+        img {
+          max-height: 1200px;
+        }
+      }
     }
   }
 }

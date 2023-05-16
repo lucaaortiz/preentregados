@@ -13,11 +13,7 @@ p {
   color: #b6b2b2; }
 
 main {
-  background-color: #080808;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 2rem; }
+  background-color: #080808; }
   main section {
     display: flex;
     flex-direction: column;
@@ -30,38 +26,44 @@ main {
       color: #fdfdfd;
       text-align: center; }
 
-.contenedor, .contenedor2 {
+.mi-clase-main {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .contenedor .imagen, .contenedor2 .imagen {
-    position: relative;
+  flex-direction: column; }
+  .mi-clase-main .contenedor {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px; }
-    .contenedor .imagen img, .contenedor2 .imagen img {
-      max-width: 100%;
-      border-radius: 10px; }
-    .contenedor .imagen p, .contenedor2 .imagen p {
-      font-size: 16px;
-      line-height: 1.5;
-      margin: 10px 0;
-      text-align: center; }
-  .contenedor .imagen2, .contenedor2 .imagen2 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px; }
-    .contenedor .imagen2 img, .contenedor2 .imagen2 img {
-      max-width: 100%;
-      border-radius: 10px; }
-    .contenedor .imagen2 p, .contenedor2 .imagen2 p {
-      font-size: 16px;
-      line-height: 1.5;
-      margin: 10px 0;
-      text-align: center; }
+    flex-direction: column; }
+    .mi-clase-main .contenedor .imagen {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px; }
+      .mi-clase-main .contenedor .imagen img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+        max-height: 400px; }
+      .mi-clase-main .contenedor .imagen p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left; }
+  @media (min-width: 576px) {
+    .mi-clase-main .contenedor .imagen {
+      flex-direction: row;
+      align-items: center; }
+      .mi-clase-main .contenedor .imagen img {
+        max-height: 600px; }
+      .mi-clase-main .contenedor .imagen p {
+        margin-left: 10px; } }
+  @media (min-width: 768px) {
+    .mi-clase-main .contenedor .imagen img {
+      max-height: 800px; } }
+  @media (min-width: 992px) {
+    .mi-clase-main .contenedor .imagen img {
+      max-height: 1000px; } }
+  @media (min-width: 1200px) {
+    .mi-clase-main .contenedor .imagen img {
+      max-height: 1200px; } }
 
 .tamanoTitulo {
   font-size: 3rem; }
@@ -137,9 +139,11 @@ section p {
       text-align: right; } }
 
 @media (min-width: 1024px) {
-  .contenedor .imagen, .contenedor2 .imagen {
+  .contenedor .imagen,
+  .contenedor2 .imagen {
     margin-bottom: 20px; }
-  .contenedor .imagen2, .contenedor2 .imagen2 {
+  .contenedor .imagen2,
+  .contenedor2 .imagen2 {
     margin-bottom: 20px; } }
 
 @media only screen and (min-width: 576px) {
